@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+
+        <!-- The header contains information describing the snippet. -->
+        <Header>
+          
+          <!-- The Title of the snippet, this will be shown in the snippets manager. -->
+          <Title>Create extenssion class</Title>
+          
+          <!-- The description of the snippet. -->
+          <Description>Cretes an extenssion for a class.</Description>
+          
+          <!-- The author of the snippet. -->
+          <Author>Vladimir Badiuk</Author>
+          
+          <!-- The set of characters that must be keyed in to insert the snippet. -->
+          <Shortcut>extenssion</Shortcut>
+          
+          <!-- A URL for more help. -->
+          <!-- <HelpUrl>http://apex.codeplex.com</HelpUrl> -->
+          
+          <!-- The set of snippet types we're dealing with - either Expansion or -->
+          <SnippetTypes>
+            <SnippetType>Expansion</SnippetType>
+          </SnippetTypes>          
+          
+        </Header>
+      
+        <!-- Now we have the snippet itself. -->
+        <Snippet>
+		  <!-- Create any declarations that we use in the snippet. -->
+		  <Declarations>
+			<Literal>
+			  <ID>ExtenssionClass</ID>
+			  <ToolTip>Extenssion class</ToolTip>
+			  <Default>Type</Default>
+			</Literal>
+			<Literal>
+			  <ID>returnType</ID>
+			  <ToolTip>Enter the return type of the method.</ToolTip>
+			  <Default>void</Default>
+			</Literal>
+			<Literal>
+			  <ID>ExtenssionMethod</ID>
+			  <ToolTip>Extenssion method</ToolTip>
+			  <Default>Method</Default>
+			</Literal>
+
+		  </Declarations>
+
+                    
+            <!-- Sepecify the code language and the actual snippet content. -->
+            <Code Language="CSharp" Kind="any">
+                <![CDATA[
+
+	public static class $ExtenssionClass$Extenssions
+	{
+		public static $returnType$  $ExtenssionMethod$(this $ExtenssionClass$ object)
+		{
+			return 
+		}
+	}
+                    
+                ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
